@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>标题</title>
+<meta name="description" content=""/>
+<meta name="keywords" content="" />
+<mata http-equiv="imagetoolbar" content="no"/>
+
+<link rel="stylesheet" rev="stylesheet" type="text/css" href="css/main.css" media="all"/>
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="bookmark" href="favicon.ico"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+<!--[if lt IE 7]>
+  <script type="text/javascript" src="js/unitpngfix.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5shiv.js"></script>
+<![endif]-->
+<style>
+	html {
+		height: 100%;
+	}
+	body {
+    height: 100%;
+    margin: 0;
+    background: url(images/126.jpg) center no-repeat;
+    background-size: cover;
+    -ms-behavior: url(css/backgroundsize.min.htc);
+    behavior: url(css/backgroundsize.min.htc);
+}
+</style>
+</head>
+
+<body>
+	<div class="topbar">
+    	<div class="logosty">
+        </div>
+        <div class="menubar">
+        	<ul>
+            	<li><a href=""><h3>公司首页</h3><span>Home</span></a></li>
+                <li><a href="">公司介绍<span>Company</span></a></li>
+                <li><a href="">项目案例<span>Cases</span></a></li>
+                <li><a href="">公司新闻<span>News</span></a></li>
+                <li><a href="">联系我们<span>Contact us</span></a></li>
+            </ul>
+        </div>
+    </div>
+    
+       
+</body>
+<script src="js/1.8.3/jquery.min.js"></script>
+<script src="js/jqthumb.min.js"></script>
+<script>
+$(function(){
+	$('.dowebok2 img').jqthumb({
+		width: 200,
+		height: 200,
+		after: function(imgObj){
+			imgObj.css('opacity', 0).animate({opacity: 1}, 2000);
+		}
+	});
+});
+</script>
+
+</html>
